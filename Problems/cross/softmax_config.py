@@ -1,0 +1,15 @@
+# Settings for the softmax optimisiation.
+MAX_EM = 340
+MIN_M = 0
+MIN_V = 0
+
+MULTIOBJECTIVE_BETA = 50
+TARGET_EM = 150
+TARGET_M = [1e-5, 1e-4, 1e-3, 1e-2]
+TARGET_V = 0.000751
+
+NORM_M = TARGET_M
+NORM_V = TARGET_V
+NORM_EM = MAX_EM - TARGET_EM
+
+TARGET_BIN = 10**(-2.3)
