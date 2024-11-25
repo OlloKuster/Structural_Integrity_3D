@@ -31,6 +31,8 @@ By using this information, we can use gradient based optimization by "building" 
 Since we are looking at 3D nanoprinting, we also don't want any cavities appearing inside our design. This means, that the void, or the absence of the material, also has to be fully connected (*i.e.* structurally integral).
 So we not only try to connect the material to heat sinks using a heat dissipation solution, we also try to connect the void to their respective heat sinks with another heat dissipation simulation.
 
+Note, that the gifs show the contour of the material for better visualization. The actual designs are filled with material.
+
 ## Result
 
 If we optimize our structures using topology optimization, we are able to find designs which fulfil all of our desired constraints. Not only are these fully connected, but we also account for minimum feature size and binarization of the material.
