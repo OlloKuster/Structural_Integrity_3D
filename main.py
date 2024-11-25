@@ -15,7 +15,7 @@ if __name__ == "__main__":
     devices = jax.devices()
     bin_params = np.linspace(1, 30, 5)
     dispenser = dispenser.Dispenser
-    for struct in [dispenser.CROSS.value]:
+    for struct in [dispenser.LENS3D.value]:
         simulation = struct
         with jax.default_device(jax.devices()[n]):
             main(simulation, bin_params, n)
