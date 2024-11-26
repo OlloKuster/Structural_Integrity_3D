@@ -16,13 +16,13 @@ applications.
 
 ## Problem formulation
 This code provides the full opitimization for the paper. We are interested in enforcing physical constriants to our optimization problem to enforce structural integrity.
-This is done by using two auxiliary heat dissipation simulations, where we solve Poisson's Equation to calculate the gradient of the heat distribution $\nabla u(x, y, z)$ using a finite element scheme.
+This is done by using two auxiliary heat dissipation simulations, where we solve Poisson's Equation to calculate the heat distribution $u(x, y, z)$ using a finite element scheme.
 
 If we use no auxiliary heat solver we end up with designs which are free floating or contain free floating parts.
 For example, a focusing device, where the middle part is not connected anywhere.
 ![](https://github.com/OlloKuster/Structural_Integrity_3D/blob/main/Animations/Focusing_Device/material_x.gif)
 
-If we then look at $\nabla u(x, y, z)$, we can clearly see the non-connected parts having big values (red).
+If we then look at $u(x, y, z)$, we can clearly see the non-connected parts having big values (red).
 
 ![](https://github.com/OlloKuster/Structural_Integrity_3D/blob/main/Animations/Focusing_Device/heat_material_x.gif)
 
